@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+  batch:
+    container_name: spring_batch
+    image: mariadb:latest
+    environment:
+      MYSQL_DATABASE: "spring_batch"
+      MYSQL_ROOT_PASSWORD: "password1234"
+      TZ: "Asia/Seoul"
+    ports:
+      - "3307:3306"
+    volumes:
+      - batchdata:/var/lib/mysql
+
+  application:
+    container_name: application
+    image: mariadb:latest
+    environment:
+      MYSQL_DATABASE: "moigae"
+      MYSQL_ROOT_PASSWORD: "hong"
+      TZ: "Asia/Seoul"
+    ports:
+      - "3306:3306"
+    volumes:
+      - appdata:/var/lib/mysql
+
+volumes:
+  batchdata:
+  appdata:
