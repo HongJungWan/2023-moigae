@@ -82,3 +82,13 @@
 ✅ test : 테스트 코드, 리펙토링 테스트 코드 추가 <br/>
 ✅ chore : 기타 변경사항 <br/>
 ✅ 제목은 50자를 넘기지 않고, 맞침표를 붙이지 않는다. <br/>
+
+<br><br>
+
+### 산출물
+
+<img src="readme/산출물_1.png" width="750">
+
+<br><br>
+
+<img src="readme/산출물_2.png" width="750">
